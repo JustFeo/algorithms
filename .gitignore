@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OSMnx cache
+cache/
+
+# Output files from build_graph.py
+campus_graph/tudelft_campus_map.png
+campus_graph/tudelft_walk_graph.graphml
+campus_graph/building_node_map.json
