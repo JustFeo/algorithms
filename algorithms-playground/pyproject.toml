@@ -1,0 +1,31 @@
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=heroes3_planner --cov-report=term-missing"
+testpaths = [
+    "heroes3_planner/tests",
+]
+
+[tool.coverage.run]
+source = ["heroes3_planner"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.flake8]
+# Default flake8 is not used when black is enabled through pre-commit.
+# This section is more for editor integration if needed.
+# For actual checking, .pre-commit-config.yaml is the source of truth.
+max-line-length = 88
+extend-ignore = "E203, W503" # E203: whitespace before ':', W503: line break before binary operator (black-compatible)
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    ".venv"
+]

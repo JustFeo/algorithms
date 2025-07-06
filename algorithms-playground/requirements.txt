@@ -1,0 +1,15 @@
+# Core libraries
+networkx
+numpy
+
+# Testing
+pytest
+pytest-cov
+
+# Linting and Formatting
+black
+flake8
+pre-commit
+
+# Notebooks
+jupyterlab
