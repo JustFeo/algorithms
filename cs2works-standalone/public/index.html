@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 Figurine - Premium Gaming Collectibles</title>
+    <link rel="stylesheet" href="styles.css">
+<script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CS2WORKS</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#preorder" class="nav-link">Pre-Order</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section replaced with video header -->
+    <section id="home" class="hero-video-header">
+        <video id="heroVideo" class="hero-video" playsinline preload="auto" poster="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MMiamiDarrylFigurine_Accessories_1.jpg?v=1750332832" muted autoplay loop>
+            <source src="https://cdn.shopify.com/videos/c/o/v/89720375f43a49e48abbc42e9708c9f3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay" id="heroOverlay">
+            <h1 class="hero-title">CS2WORKS</h1>
+            <p class="hero-subtitle">Experience the ultimate gaming collectible. Crafted with precision and designed for true CS2 enthusiasts.</p>
+            <div class="hero-cta">
+                <button class="btn-primary btn-large" onclick="document.getElementById('heroVideo').play()">Play Video</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product" class="product-section-dark">
+  <div class="glove-layout-wrapper">
+    <div class="glove-viewer">
+      <div id="viewer-container" class="viewer-container">
+        <img id="viewer-img" src="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_1.jpg?v=1750332619" alt="Figurine Image" class="viewer-img" loading="eager" />
+        <div class="angle-buttons">
+          <button id="myAngleLeft" class="angle-btn" aria-label="Previous angle">↻</button>
+          <button id="myAngleRight" class="angle-btn" aria-label="Next angle">↺</button>
+        </div>
+        <div class="viewer-controls">
+          <button id="prevBtn" class="overlay-nav arrow-left" aria-label="Previous image">‹</button>
+          <button id="nextBtn" class="overlay-nav arrow-right" aria-label="Next image">›</button>
+          <div id="dotContainer" class="dot-container"></div>
+        </div>
+        <div class="viewer-caption">
+          <div id="currentCaption" class="caption-text"></div>
+          <div id="imageCount" class="count-text"></div>
+        </div>
+      </div>
+      <div class="product-gallery-thumbs">
+        <img class="gallery-thumb" src="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_1.jpg?v=1750332619" data-img="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_1.jpg?v=1750332619" />
+        <img class="gallery-thumb" src="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_2.jpg?v=1750332630" data-img="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_2.jpg?v=1750332630" />
+        <img class="gallery-thumb" src="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_3.jpg?v=1750332630" data-img="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_3.jpg?v=1750332630" />
+        <img class="gallery-thumb" src="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_4.jpg?v=1750332630" data-img="https://cdn.shopify.com/s/files/1/0745/6482/9415/files/MiamiDarrylFigurine_PandorasBox_4.jpg?v=1750332630" />
+      </div>
+    </div>
+    <div class="glove-column">
+      <div class="product-header">
+        <div class="product-info-box">
+          <h1 class="product-title">Sir Bloody Miami Darryl Figure</h1>
+          <div class="product-price">$278.00 USD</div>
+          <div class="free-delivery-message">Free Shipping On All Orders</div>
+        </div>
+      </div>
+      <div class="glove-options product-form__input--pill">
+        <input type="radio" id="glove-pandora" name="glove" value="pandora" checked>
+        <label for="glove-pandora">Pandora's Box</label>
+        <input type="radio" id="glove-vice" name="glove" value="vice">
+        <label for="glove-vice">Vice</label>
+        <input type="radio" id="glove-hedge" name="glove" value="hedge">
+        <label for="glove-hedge">Hedge Maze</label>
+      </div>
+      <div class="quantity-selector">
+        <div class="quantity-label">Quantity</div>
+        <div class="quantity-controls" id="qty-controls"></div>
+      </div>
+      <div class="preorder-buttons">
+        <button class="btn-preorder">Pre-Order</button>
+        <button class="btn-crypto">Pre-Order With Crypto &amp; Save $30</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section: Big guns image background with text -->
+<section class="footer-guns-bg">
+  <div class="footer-guns-content">
+    <h2>All Accessories Included</h2>
+    <p>Each figurine comes with a full set of premium accessories, beautifully displayed and ready for your collection. Only 1000 will ever exist, each marked with a unique number.</p>
+  </div>
+</section>
+
+<!-- Standard Footer Bar -->
+<footer class="footer-bar">
+  <div class="footer-bar-content">
+    <!-- Contact button removed -->
+  </div>
+  <div class="footer-bar-copy">&copy; 2024 CS2WORKS. All rights reserved.</div>
+</footer>
+
+    <script src="../src/main.js"></script>
+</body>
+</html>
+
