@@ -1,0 +1,19 @@
+# Ignore video files larger than 100MB and all mp4s
+public/*.mp4
+public/*.webm
+public/*.mov
+
+# macOS system files
+.DS_Store
+
+# Node and build artifacts
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+
+# Ignore other common unwanted files
+*.tmp
+*.swp 
